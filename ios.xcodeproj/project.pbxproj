@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		2B35C80BE7A58C73A64ACC91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F694D5BA7E31DFFACE6084 /* libPods.a */; };
 		D586CF3C1BC90F0700CCC96B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D586CF431BC90F6700CCC96B /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D586CF401BC90F6700CCC96B /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
-		D586CF441BC90F6700CCC96B /* BaiduMapAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D586CF421BC90F6700CCC96B /* BaiduMapAPI.framework */; settings = {ASSET_TAGS = (); }; };
+		D586CF481BC91B3000CCC96B /* ParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF471BC91B3000CCC96B /* ParseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF4A1BC9202600CCC96B /* PYNaviationController.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D711BC816F800DF93D5 /* iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D701BC816F800DF93D5 /* iosTests.m */; };
 		F9BB7D7C1BC816F800DF93D5 /* iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D7B1BC816F800DF93D5 /* iosUITests.m */; };
 		F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D951BC8192500DF93D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D901BC8192500DF93D5 /* main.m */; settings = {ASSET_TAGS = (); }; };
-		F9BB7D961BC8192500DF93D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D931BC8192500DF93D5 /* ViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F9BB7D961BC8192500DF93D5 /* PYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D931BC8192500DF93D5 /* PYViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9C1BC8193700DF93D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D981BC8193700DF93D5 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9D1BC8193700DF93D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D991BC8193700DF93D5 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D9A1BC8193700DF93D5 /* ios.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
@@ -45,8 +45,11 @@
 		4E945E690AE4B611C71C211A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		71F694D5BA7E31DFFACE6084 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ios/Resources/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		D586CF401BC90F6700CCC96B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
-		D586CF421BC90F6700CCC96B /* BaiduMapAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI.framework; sourceTree = "<group>"; };
+		D586CF461BC91B3000CCC96B /* ParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseViewController.h; sourceTree = "<group>"; };
+		D586CF471BC91B3000CCC96B /* ParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseViewController.m; sourceTree = "<group>"; };
+		D586CF491BC9202600CCC96B /* PYNaviationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNaviationController.h; sourceTree = "<group>"; };
+		D586CF4A1BC9202600CCC96B /* PYNaviationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNaviationController.m; sourceTree = "<group>"; };
+		D586CF4C1BC921B200CCC96B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F9BB7D501BC816F800DF93D5 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB7D6C1BC816F800DF93D5 /* iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB7D701BC816F800DF93D5 /* iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosTests.m; sourceTree = "<group>"; };
@@ -57,8 +60,8 @@
 		F9BB7D8E1BC8192500DF93D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F9BB7D901BC8192500DF93D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F9BB7D921BC8192500DF93D5 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F9BB7D931BC8192500DF93D5 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F9BB7D921BC8192500DF93D5 /* PYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYViewController.h; sourceTree = "<group>"; };
+		F9BB7D931BC8192500DF93D5 /* PYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYViewController.m; sourceTree = "<group>"; };
 		F9BB7D981BC8193700DF93D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9BB7D991BC8193700DF93D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9BB7D9B1BC8193700DF93D5 /* ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios.xcdatamodel; sourceTree = "<group>"; };
@@ -71,8 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D586CF441BC90F6700CCC96B /* BaiduMapAPI.framework in Frameworks */,
-				D586CF431BC90F6700CCC96B /* BaiduMapAPI.framework in Frameworks */,
 				2B35C80BE7A58C73A64ACC91 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,34 +115,17 @@
 		D586CF3D1BC90F6700CCC96B /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				D586CF3E1BC90F6700CCC96B /* BaiduMap */,
 			);
 			path = Externals;
 			sourceTree = "<group>";
 		};
-		D586CF3E1BC90F6700CCC96B /* BaiduMap */ = {
+		D586CF451BC91B0300CCC96B /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				D586CF3F1BC90F6700CCC96B /* Release-iphoneos */,
-				D586CF411BC90F6700CCC96B /* Release-iphonesimulator */,
+				D586CF461BC91B3000CCC96B /* ParseViewController.h */,
+				D586CF471BC91B3000CCC96B /* ParseViewController.m */,
 			);
-			path = BaiduMap;
-			sourceTree = "<group>";
-		};
-		D586CF3F1BC90F6700CCC96B /* Release-iphoneos */ = {
-			isa = PBXGroup;
-			children = (
-				D586CF401BC90F6700CCC96B /* BaiduMapAPI.framework */,
-			);
-			path = "Release-iphoneos";
-			sourceTree = "<group>";
-		};
-		D586CF411BC90F6700CCC96B /* Release-iphonesimulator */ = {
-			isa = PBXGroup;
-			children = (
-				D586CF421BC90F6700CCC96B /* BaiduMapAPI.framework */,
-			);
-			path = "Release-iphonesimulator";
+			path = Parse;
 			sourceTree = "<group>";
 		};
 		F9BB7D471BC816F800DF93D5 = {
@@ -210,6 +194,7 @@
 				F9BB7D8E1BC8192500DF93D5 /* AppDelegate.h */,
 				F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */,
 				F9BB7D901BC8192500DF93D5 /* main.m */,
+				D586CF4C1BC921B200CCC96B /* PrefixHeader.pch */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -217,8 +202,11 @@
 		F9BB7D911BC8192500DF93D5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F9BB7D921BC8192500DF93D5 /* ViewController.h */,
-				F9BB7D931BC8192500DF93D5 /* ViewController.m */,
+				D586CF451BC91B0300CCC96B /* Parse */,
+				F9BB7D921BC8192500DF93D5 /* PYViewController.h */,
+				F9BB7D931BC8192500DF93D5 /* PYViewController.m */,
+				D586CF491BC9202600CCC96B /* PYNaviationController.h */,
+				D586CF4A1BC9202600CCC96B /* PYNaviationController.m */,
 				F9BB7D9F1BC819D500DF93D5 /* LaunchScreen.storyboard */,
 				F9BB7DA01BC819D500DF93D5 /* Main.storyboard */,
 			);
@@ -427,10 +415,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */,
+				D586CF481BC91B3000CCC96B /* ParseViewController.m in Sources */,
 				F9BB7D951BC8192500DF93D5 /* main.m in Sources */,
 				F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
-				F9BB7D961BC8192500DF93D5 /* ViewController.m in Sources */,
+				F9BB7D961BC8192500DF93D5 /* PYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +548,8 @@
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphonesimulator",
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphoneos",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Classes/Global/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penneryu.ios;
@@ -575,6 +567,8 @@
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphonesimulator",
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphoneos",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ios/Classes/Global/PrefixHeader.pch;
 				INFOPLIST_FILE = "$(SRCROOT)/ios/Configs/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.penneryu.ios;

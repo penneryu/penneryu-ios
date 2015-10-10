@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "PYViewController.h"
+#import "PYNaviationController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    PYViewController* viewController = [[PYViewController alloc]init];
+    PYNaviationController *navigationController = [[PYNaviationController alloc]initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setBarTintColor:PYOrangeColor];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttrs];
+    
     return YES;
 }
 
