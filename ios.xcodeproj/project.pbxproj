@@ -8,14 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2B35C80BE7A58C73A64ACC91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F694D5BA7E31DFFACE6084 /* libPods.a */; };
+		D50CF4A81BCB64140011CEB7 /* PYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4A71BCB64140011CEB7 /* PYTabBarController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4AC1BCB812B0011CEB7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4AB1BCB812B0011CEB7 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4AF1BCB82980011CEB7 /* ParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4AE1BCB82980011CEB7 /* ParseViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4BF1BCB84D10011CEB7 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4BE1BCB84D10011CEB7 /* MessageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4C21BCB84E40011CEB7 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4C11BCB84E40011CEB7 /* DiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4C51BCB84F20011CEB7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4C41BCB84F20011CEB7 /* ProfileViewController.m */; settings = {ASSET_TAGS = (); }; };
+		D50CF4C91BCB9A410011CEB7 /* ParseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50CF4C81BCB9A410011CEB7 /* ParseViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		D586CF3C1BC90F0700CCC96B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
-		D586CF481BC91B3000CCC96B /* ParseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF471BC91B3000CCC96B /* ParseViewController.m */; settings = {ASSET_TAGS = (); }; };
 		D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF4A1BC9202600CCC96B /* PYNaviationController.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D711BC816F800DF93D5 /* iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D701BC816F800DF93D5 /* iosTests.m */; };
 		F9BB7D7C1BC816F800DF93D5 /* iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D7B1BC816F800DF93D5 /* iosUITests.m */; };
 		F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D951BC8192500DF93D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D901BC8192500DF93D5 /* main.m */; settings = {ASSET_TAGS = (); }; };
-		F9BB7D961BC8192500DF93D5 /* PYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D931BC8192500DF93D5 /* PYViewController.m */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9C1BC8193700DF93D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D981BC8193700DF93D5 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9D1BC8193700DF93D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D991BC8193700DF93D5 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D9A1BC8193700DF93D5 /* ios.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
@@ -44,9 +49,20 @@
 		1C030F4ECFFCFE3D0918AA75 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		4E945E690AE4B611C71C211A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		71F694D5BA7E31DFFACE6084 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50CF4A61BCB64140011CEB7 /* PYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYTabBarController.h; sourceTree = "<group>"; };
+		D50CF4A71BCB64140011CEB7 /* PYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYTabBarController.m; sourceTree = "<group>"; };
+		D50CF4AA1BCB812B0011CEB7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Main/MainViewController.h; sourceTree = "<group>"; };
+		D50CF4AB1BCB812B0011CEB7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Main/MainViewController.m; sourceTree = "<group>"; };
+		D50CF4AD1BCB82980011CEB7 /* ParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParseViewController.h; path = ios/Classes/UI/Main/Parse/ParseViewController.h; sourceTree = SOURCE_ROOT; };
+		D50CF4AE1BCB82980011CEB7 /* ParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParseViewController.m; path = ios/Classes/UI/Main/Parse/ParseViewController.m; sourceTree = SOURCE_ROOT; };
+		D50CF4BD1BCB84D10011CEB7 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MessageViewController.h; path = Message/MessageViewController.h; sourceTree = "<group>"; };
+		D50CF4BE1BCB84D10011CEB7 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = Message/MessageViewController.m; sourceTree = "<group>"; };
+		D50CF4C01BCB84E40011CEB7 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiscoverViewController.h; path = Disvover/DiscoverViewController.h; sourceTree = "<group>"; };
+		D50CF4C11BCB84E40011CEB7 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiscoverViewController.m; path = Disvover/DiscoverViewController.m; sourceTree = "<group>"; };
+		D50CF4C31BCB84F20011CEB7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Profile/ProfileViewController.h; sourceTree = "<group>"; };
+		D50CF4C41BCB84F20011CEB7 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Profile/ProfileViewController.m; sourceTree = "<group>"; };
+		D50CF4C81BCB9A410011CEB7 /* ParseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParseViewController.xib; path = ios/Classes/UI/Main/Parse/ParseViewController.xib; sourceTree = SOURCE_ROOT; };
 		D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ios/Resources/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		D586CF461BC91B3000CCC96B /* ParseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseViewController.h; sourceTree = "<group>"; };
-		D586CF471BC91B3000CCC96B /* ParseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseViewController.m; sourceTree = "<group>"; };
 		D586CF491BC9202600CCC96B /* PYNaviationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNaviationController.h; sourceTree = "<group>"; };
 		D586CF4A1BC9202600CCC96B /* PYNaviationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNaviationController.m; sourceTree = "<group>"; };
 		D586CF4C1BC921B200CCC96B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -60,8 +76,6 @@
 		F9BB7D8E1BC8192500DF93D5 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F9BB7D901BC8192500DF93D5 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F9BB7D921BC8192500DF93D5 /* PYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYViewController.h; sourceTree = "<group>"; };
-		F9BB7D931BC8192500DF93D5 /* PYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYViewController.m; sourceTree = "<group>"; };
 		F9BB7D981BC8193700DF93D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9BB7D991BC8193700DF93D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9BB7D9B1BC8193700DF93D5 /* ios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios.xcdatamodel; sourceTree = "<group>"; };
@@ -112,6 +126,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D50CF4A91BCB80D40011CEB7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D50CF4AA1BCB812B0011CEB7 /* MainViewController.h */,
+				D50CF4AB1BCB812B0011CEB7 /* MainViewController.m */,
+				D586CF451BC91B0300CCC96B /* Parse */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D50CF4B01BCB82BF0011CEB7 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				D50CF4BD1BCB84D10011CEB7 /* MessageViewController.h */,
+				D50CF4BE1BCB84D10011CEB7 /* MessageViewController.m */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		D50CF4B11BCB82D30011CEB7 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				D50CF4C01BCB84E40011CEB7 /* DiscoverViewController.h */,
+				D50CF4C11BCB84E40011CEB7 /* DiscoverViewController.m */,
+			);
+			name = Discover;
+			sourceTree = "<group>";
+		};
+		D50CF4B21BCB83010011CEB7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D50CF4C31BCB84F20011CEB7 /* ProfileViewController.h */,
+				D50CF4C41BCB84F20011CEB7 /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
 		D586CF3D1BC90F6700CCC96B /* Externals */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,8 +173,9 @@
 		D586CF451BC91B0300CCC96B /* Parse */ = {
 			isa = PBXGroup;
 			children = (
-				D586CF461BC91B3000CCC96B /* ParseViewController.h */,
-				D586CF471BC91B3000CCC96B /* ParseViewController.m */,
+				D50CF4AD1BCB82980011CEB7 /* ParseViewController.h */,
+				D50CF4AE1BCB82980011CEB7 /* ParseViewController.m */,
+				D50CF4C81BCB9A410011CEB7 /* ParseViewController.xib */,
 			);
 			path = Parse;
 			sourceTree = "<group>";
@@ -202,13 +254,16 @@
 		F9BB7D911BC8192500DF93D5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D586CF451BC91B0300CCC96B /* Parse */,
-				F9BB7D921BC8192500DF93D5 /* PYViewController.h */,
-				F9BB7D931BC8192500DF93D5 /* PYViewController.m */,
-				D586CF491BC9202600CCC96B /* PYNaviationController.h */,
-				D586CF4A1BC9202600CCC96B /* PYNaviationController.m */,
+				D50CF4A91BCB80D40011CEB7 /* Main */,
+				D50CF4B01BCB82BF0011CEB7 /* Message */,
+				D50CF4B11BCB82D30011CEB7 /* Discover */,
+				D50CF4B21BCB83010011CEB7 /* Profile */,
 				F9BB7D9F1BC819D500DF93D5 /* LaunchScreen.storyboard */,
 				F9BB7DA01BC819D500DF93D5 /* Main.storyboard */,
+				D586CF491BC9202600CCC96B /* PYNaviationController.h */,
+				D586CF4A1BC9202600CCC96B /* PYNaviationController.m */,
+				D50CF4A61BCB64140011CEB7 /* PYTabBarController.h */,
+				D50CF4A71BCB64140011CEB7 /* PYTabBarController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -338,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D50CF4C91BCB9A410011CEB7 /* ParseViewController.xib in Resources */,
 				F9BB7DA11BC819D500DF93D5 /* LaunchScreen.storyboard in Resources */,
 				F9BB7D9D1BC8193700DF93D5 /* Info.plist in Resources */,
 				F9BB7D9C1BC8193700DF93D5 /* Assets.xcassets in Resources */,
@@ -416,11 +472,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */,
-				D586CF481BC91B3000CCC96B /* ParseViewController.m in Sources */,
+				D50CF4A81BCB64140011CEB7 /* PYTabBarController.m in Sources */,
 				F9BB7D951BC8192500DF93D5 /* main.m in Sources */,
+				D50CF4AC1BCB812B0011CEB7 /* MainViewController.m in Sources */,
+				D50CF4C51BCB84F20011CEB7 /* ProfileViewController.m in Sources */,
+				D50CF4C21BCB84E40011CEB7 /* DiscoverViewController.m in Sources */,
+				D50CF4BF1BCB84D10011CEB7 /* MessageViewController.m in Sources */,
+				D50CF4AF1BCB82980011CEB7 /* ParseViewController.m in Sources */,
 				F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
-				F9BB7D961BC8192500DF93D5 /* PYViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

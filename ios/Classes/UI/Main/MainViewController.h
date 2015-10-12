@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PYViewController : UIViewController
+@interface MainViewController : UIViewController
 
 
 @end

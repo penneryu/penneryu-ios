@@ -1,19 +1,18 @@
 //
-//  ParseViewController.m
+//  ProfileViewController.m
 //  ios
 //
-//  Created by sh587 on 15/10/10.
+//  Created by sh587 on 15/10/12.
 //  Copyright © 2015年 penneryu. All rights reserved.
 //
 
-#import "ParseViewController.h"
-#import "Parse/Parse.h"
+#import "ProfileViewController.h"
 
-@interface ParseViewController ()
+@interface ProfileViewController ()
 
 @end
 
-@implementation ParseViewController
+@implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

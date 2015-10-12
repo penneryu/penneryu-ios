@@ -7,8 +7,9 @@
 //
 
 #import "AppDelegate.h"
-#import "PYViewController.h"
-#import "PYNaviationController.h"
+#import "PYTabBarController.h"
+#import "SVProgressHUD.h"
+#import "Parse/Parse.h"
 
 @interface AppDelegate ()
 
@@ -20,10 +21,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    PYViewController* viewController = [[PYViewController alloc]init];
-    PYNaviationController *navigationController = [[PYNaviationController alloc]initWithRootViewController:viewController];
-    self.window.rootViewController = navigationController;
+    PYTabBarController* viewController = [[PYTabBarController alloc]init];
+    self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
+    
+    [Parse setApplicationId:@"e02Md4d8u0ybukcrAUPVcXkcb665LR8jXFLrRgY8"
+                  clientKey:@"1FjRquDOEdwUu7Kz2TaYnLEOQl0WrMAVuY3KPvQO"];
     
     [[UINavigationBar appearance] setBarTintColor:PYOrangeColor];
     [[UINavigationBar appearance] setTranslucent:NO];
@@ -33,6 +36,9 @@
     textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
     [[UINavigationBar appearance] setTitleTextAttributes:textAttrs];
+    
+    [SVProgressHUD setBackgroundColor:PYOrangeColor];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     
     return YES;
 }

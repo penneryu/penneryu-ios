@@ -6,20 +6,22 @@
 //  Copyright © 2015年 penneryu. All rights reserved.
 //
 
-#import "PYViewController.h"
+#import "MainViewController.h"
+#import "ParseViewController.h"
 
-@interface PYViewController () <UITableViewDataSource>
+@interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *items;
 
 @end
 
-@implementation PYViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds];
+    tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
 }
@@ -66,7 +68,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    if (indexPath.row == 0) {
+        ParseViewController *vc = [[ParseViewController alloc]initWithNibName:@"ParseViewController" bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end
