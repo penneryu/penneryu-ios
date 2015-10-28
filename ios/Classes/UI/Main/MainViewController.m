@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 #import "ParseViewController.h"
+#import "StackViewController.h"
+#import "NetWorkViewController.h"
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -34,7 +36,7 @@
 - (NSArray *)items {
     if (_items) return _items;
     
-    _items = @[@"Parse", @""];
+    _items = @[@"Parse", @"StackView", @"NetWork", @""];
     
     return _items;
 }
@@ -68,10 +70,15 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UIViewController *vc;
     if (indexPath.row == 0) {
-        ParseViewController *vc = [[ParseViewController alloc]initWithNibName:@"ParseViewController" bundle:nil];
-        [self.navigationController pushViewController:vc animated:YES];
+        vc = [[ParseViewController alloc]initWithNibName:@"ParseViewController" bundle:nil];
+    } else if (indexPath.row == 1) {
+        vc = [[StackViewController alloc]initWithNibName:@"StackViewController" bundle:nil];
+    } else if (indexPath.row == 2) {
+        vc = [[NetWorkViewController alloc]init];
     }
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

@@ -37,6 +37,8 @@
     textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
     [[UINavigationBar appearance] setTitleTextAttributes:textAttrs];
     
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
     [SVProgressHUD setBackgroundColor:PYOrangeColor];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     
