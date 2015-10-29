@@ -10,6 +10,7 @@
 #import "ParseViewController.h"
 #import "StackViewController.h"
 #import "NetWorkViewController.h"
+#import "RongLoginViewController.h"
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -36,7 +37,7 @@
 - (NSArray *)items {
     if (_items) return _items;
     
-    _items = @[@"Parse", @"StackView", @"NetWork", @""];
+    _items = @[@"Parse", @"StackView", @"NetWork", @"RongCloud", @""];
     
     return _items;
 }
@@ -77,6 +78,8 @@
         vc = [[StackViewController alloc]initWithNibName:@"StackViewController" bundle:nil];
     } else if (indexPath.row == 2) {
         vc = [[NetWorkViewController alloc]init];
+    } else if (indexPath.row == 3) {
+        vc = [[RongLoginViewController alloc]init];
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

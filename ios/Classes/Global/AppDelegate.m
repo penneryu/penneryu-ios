@@ -8,8 +8,10 @@
 
 #import "AppDelegate.h"
 #import "PYTabBarController.h"
+#import "RongLoginViewController.h"
 #import "SVProgressHUD.h"
 #import "Parse/Parse.h"
+#import "RongIMKit/RongIMKit.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +30,17 @@
     [Parse setApplicationId:@"e02Md4d8u0ybukcrAUPVcXkcb665LR8jXFLrRgY8"
                   clientKey:@"1FjRquDOEdwUu7Kz2TaYnLEOQl0WrMAVuY3KPvQO"];
     
+    [[RCIM sharedRCIM] initWithAppKey:@"cpj2xarljduin" ];
+    
+#ifdef __IPHONE_8_0
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge
+                                                                                         |UIUserNotificationTypeSound
+                                                                                         |UIUserNotificationTypeAlert) categories:nil];
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+#else
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
+#endif
+    
     [[UINavigationBar appearance] setBarTintColor:PYOrangeColor];
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
@@ -38,9 +51,17 @@
     [[UINavigationBar appearance] setTitleTextAttributes:textAttrs];
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
     
     [SVProgressHUD setBackgroundColor:PYOrangeColor];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(didReceiveMessageNotification:)
+     name:RCKitDispatchMessageNotification
+     object:nil];
+    [[RCIM sharedRCIM] setConnectionStatusDelegate:self];
     
     return YES;
 }
@@ -68,6 +89,41 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    NSString *token =
+    [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<"
+                                                           withString:@""]
+      stringByReplacingOccurrencesOfString:@">"
+      withString:@""]
+     stringByReplacingOccurrencesOfString:@" "
+     withString:@""];
+    
+    [[RCIMClient sharedRCIMClient] setDeviceToken:token];
+}
+
+- (void)onRCIMConnectionStatusChanged:(RCConnectionStatus)status {
+    if (status == ConnectionStatus_KICKED_OFFLINE_BY_OTHER_CLIENT) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"您的帐号在别的设备上登录，您被迫下线！" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"知道了"
+                                                           style:UIAlertActionStyleDefault
+                                                         handler:nil];
+        [alert addAction:okAction];
+        UIViewController *controller = [((UITabBarController *)self.window.rootViewController).navigationController visibleViewController];
+        if (controller != nil) {
+            [controller presentViewController:controller animated:YES completion:nil];
+        }
+        RongLoginViewController *loginVC = [[RongLoginViewController alloc] init];
+        UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:loginVC];
+        self.window.rootViewController = navi;
+    }
+}
+
+- (void)didReceiveMessageNotification:(NSNotification *)notification {
+    [UIApplication sharedApplication].applicationIconBadgeNumber =
+    [UIApplication sharedApplication].applicationIconBadgeNumber + 1;
+}
+
 
 #pragma mark - Core Data stack
 

@@ -21,6 +21,8 @@
 		D58661C41BE0BA8B00050A3E /* ChannelHttpFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661C31BE0BA8B00050A3E /* ChannelHttpFactory.m */; };
 		D58661C71BE0BABF00050A3E /* ChannelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661C61BE0BABF00050A3E /* ChannelInfo.m */; };
 		D58661CB1BE0BB3D00050A3E /* NetWorkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661CA1BE0BB3D00050A3E /* NetWorkViewController.m */; };
+		D58661CF1BE1FF5D00050A3E /* RongLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661CE1BE1FF5D00050A3E /* RongLoginViewController.m */; };
+		D58661D21BE2017300050A3E /* RongChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661D11BE2017300050A3E /* RongChatListViewController.m */; };
 		D586CF3C1BC90F0700CCC96B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */; };
 		D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF4A1BC9202600CCC96B /* PYNaviationController.m */; };
 		F9BB7D711BC816F800DF93D5 /* iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D701BC816F800DF93D5 /* iosTests.m */; };
@@ -28,7 +30,6 @@
 		F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */; };
 		F9BB7D951BC8192500DF93D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D901BC8192500DF93D5 /* main.m */; };
 		F9BB7D9C1BC8193700DF93D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D981BC8193700DF93D5 /* Assets.xcassets */; };
-		F9BB7D9D1BC8193700DF93D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D991BC8193700DF93D5 /* Info.plist */; };
 		F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D9A1BC8193700DF93D5 /* ios.xcdatamodeld */; };
 		F9BB7DA11BC819D500DF93D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D9F1BC819D500DF93D5 /* LaunchScreen.storyboard */; };
 		F9BB7DA21BC819D500DF93D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7DA01BC819D500DF93D5 /* Main.storyboard */; };
@@ -79,6 +80,10 @@
 		D58661C61BE0BABF00050A3E /* ChannelInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChannelInfo.m; path = Model/Test/ChannelInfo.m; sourceTree = "<group>"; };
 		D58661C91BE0BB3D00050A3E /* NetWorkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetWorkViewController.h; path = Main/NetWork/NetWorkViewController.h; sourceTree = "<group>"; };
 		D58661CA1BE0BB3D00050A3E /* NetWorkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetWorkViewController.m; path = Main/NetWork/NetWorkViewController.m; sourceTree = "<group>"; };
+		D58661CD1BE1FF5D00050A3E /* RongLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RongLoginViewController.h; path = Main/RongCloud/RongLoginViewController.h; sourceTree = "<group>"; };
+		D58661CE1BE1FF5D00050A3E /* RongLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RongLoginViewController.m; path = Main/RongCloud/RongLoginViewController.m; sourceTree = "<group>"; };
+		D58661D01BE2017300050A3E /* RongChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RongChatListViewController.h; path = Main/RongCloud/RongChatListViewController.h; sourceTree = "<group>"; };
+		D58661D11BE2017300050A3E /* RongChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RongChatListViewController.m; path = Main/RongCloud/RongChatListViewController.m; sourceTree = "<group>"; };
 		D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ios/Resources/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
 		D586CF491BC9202600CCC96B /* PYNaviationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNaviationController.h; sourceTree = "<group>"; };
 		D586CF4A1BC9202600CCC96B /* PYNaviationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNaviationController.m; sourceTree = "<group>"; };
@@ -150,6 +155,7 @@
 				D50CF4AB1BCB812B0011CEB7 /* MainViewController.m */,
 				D58661C81BE0BB1500050A3E /* NetWork */,
 				D586CF451BC91B0300CCC96B /* Parse */,
+				D58661CC1BE1FF0D00050A3E /* RongCloud */,
 				D58661B71BE0A6ED00050A3E /* StackView */,
 			);
 			name = Main;
@@ -220,6 +226,17 @@
 				D58661CA1BE0BB3D00050A3E /* NetWorkViewController.m */,
 			);
 			name = NetWork;
+			sourceTree = "<group>";
+		};
+		D58661CC1BE1FF0D00050A3E /* RongCloud */ = {
+			isa = PBXGroup;
+			children = (
+				D58661D01BE2017300050A3E /* RongChatListViewController.h */,
+				D58661D11BE2017300050A3E /* RongChatListViewController.m */,
+				D58661CD1BE1FF5D00050A3E /* RongLoginViewController.h */,
+				D58661CE1BE1FF5D00050A3E /* RongLoginViewController.m */,
+			);
+			name = RongCloud;
 			sourceTree = "<group>";
 		};
 		D586CF3D1BC90F6700CCC96B /* Externals */ = {
@@ -412,7 +429,7 @@
 		F9BB7D481BC816F800DF93D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = penneryu;
 				TargetAttributes = {
 					F9BB7D4F1BC816F800DF93D5 = {
@@ -455,7 +472,6 @@
 			files = (
 				D50CF4C91BCB9A410011CEB7 /* ParseViewController.xib in Resources */,
 				F9BB7DA11BC819D500DF93D5 /* LaunchScreen.storyboard in Resources */,
-				F9BB7D9D1BC8193700DF93D5 /* Info.plist in Resources */,
 				F9BB7D9C1BC8193700DF93D5 /* Assets.xcassets in Resources */,
 				D58661BC1BE0A74500050A3E /* StackViewController.xib in Resources */,
 				D586CF3C1BC90F0700CCC96B /* Default-568h@2x.png in Resources */,
@@ -534,6 +550,7 @@
 			files = (
 				D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */,
 				D50CF4A81BCB64140011CEB7 /* PYTabBarController.m in Sources */,
+				D58661CF1BE1FF5D00050A3E /* RongLoginViewController.m in Sources */,
 				F9BB7D951BC8192500DF93D5 /* main.m in Sources */,
 				D58661BB1BE0A74500050A3E /* StackViewController.m in Sources */,
 				D50CF4AC1BCB812B0011CEB7 /* MainViewController.m in Sources */,
@@ -543,6 +560,7 @@
 				D58661C41BE0BA8B00050A3E /* ChannelHttpFactory.m in Sources */,
 				D50CF4AF1BCB82980011CEB7 /* ParseViewController.m in Sources */,
 				F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */,
+				D58661D21BE2017300050A3E /* RongChatListViewController.m in Sources */,
 				D58661C71BE0BABF00050A3E /* ChannelInfo.m in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
 				D58661CB1BE0BB3D00050A3E /* NetWorkViewController.m in Sources */,
