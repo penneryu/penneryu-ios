@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    UISearchBar *searchBar = [[UISearchBar alloc]init];
+    searchBar.frame = CGRectMake(0, 0, 300, 35);
+    self.navigationItem.titleView = searchBar;
 }
 
 - (void)didReceiveMemoryWarning {

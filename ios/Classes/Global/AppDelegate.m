@@ -12,6 +12,7 @@
 #import "SVProgressHUD.h"
 #import "Parse/Parse.h"
 #import "RongIMKit/RongIMKit.h"
+#import "AFNetworking/AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate ()
 
@@ -52,6 +53,8 @@
     
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+    
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     
     [SVProgressHUD setBackgroundColor:PYOrangeColor];
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];

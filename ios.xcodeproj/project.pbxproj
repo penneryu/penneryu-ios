@@ -15,6 +15,7 @@
 		D50CF4C21BCB84E40011CEB7 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4C11BCB84E40011CEB7 /* DiscoverViewController.m */; };
 		D50CF4C51BCB84F20011CEB7 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D50CF4C41BCB84F20011CEB7 /* ProfileViewController.m */; };
 		D50CF4C91BCB9A410011CEB7 /* ParseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D50CF4C81BCB9A410011CEB7 /* ParseViewController.xib */; };
+		D5107BC01BE7466E00A34BB2 /* PYWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5107BBF1BE7466E00A34BB2 /* PYWelcomeViewController.m */; };
 		D58661BB1BE0A74500050A3E /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661B91BE0A74500050A3E /* StackViewController.m */; };
 		D58661BC1BE0A74500050A3E /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D58661BA1BE0A74500050A3E /* StackViewController.xib */; };
 		D58661BF1BE0B92A00050A3E /* HttpFactoryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661BE1BE0B92A00050A3E /* HttpFactoryBase.m */; };
@@ -69,6 +70,8 @@
 		D50CF4C31BCB84F20011CEB7 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = Profile/ProfileViewController.h; sourceTree = "<group>"; };
 		D50CF4C41BCB84F20011CEB7 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = Profile/ProfileViewController.m; sourceTree = "<group>"; };
 		D50CF4C81BCB9A410011CEB7 /* ParseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParseViewController.xib; path = ios/Classes/UI/Main/Parse/ParseViewController.xib; sourceTree = SOURCE_ROOT; };
+		D5107BBE1BE7466E00A34BB2 /* PYWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYWelcomeViewController.h; sourceTree = "<group>"; };
+		D5107BBF1BE7466E00A34BB2 /* PYWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYWelcomeViewController.m; sourceTree = "<group>"; };
 		D58661B81BE0A74500050A3E /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StackViewController.h; path = Main/StackView/StackViewController.h; sourceTree = "<group>"; };
 		D58661B91BE0A74500050A3E /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StackViewController.m; path = Main/StackView/StackViewController.m; sourceTree = "<group>"; };
 		D58661BA1BE0A74500050A3E /* StackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StackViewController.xib; path = Main/StackView/StackViewController.xib; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				D586CF4A1BC9202600CCC96B /* PYNaviationController.m */,
 				D50CF4A61BCB64140011CEB7 /* PYTabBarController.h */,
 				D50CF4A71BCB64140011CEB7 /* PYTabBarController.m */,
+				D5107BBE1BE7466E00A34BB2 /* PYWelcomeViewController.h */,
+				D5107BBF1BE7466E00A34BB2 /* PYWelcomeViewController.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -562,6 +567,7 @@
 				F9BB7D9E1BC8193700DF93D5 /* ios.xcdatamodeld in Sources */,
 				D58661D21BE2017300050A3E /* RongChatListViewController.m in Sources */,
 				D58661C71BE0BABF00050A3E /* ChannelInfo.m in Sources */,
+				D5107BC01BE7466E00A34BB2 /* PYWelcomeViewController.m in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
 				D58661CB1BE0BB3D00050A3E /* NetWorkViewController.m in Sources */,
 				D58661BF1BE0B92A00050A3E /* HttpFactoryBase.m in Sources */,

@@ -31,7 +31,6 @@
     __weak NetWorkViewController *weakSelf = self;
     [httpFactory setHttpHandler:^(id responseObject) {
         [SVProgressHUD dismiss];
-        [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         NetWorkViewController *strongSelf = weakSelf;
         if (strongSelf != nil) {
              NSArray *array = (NSArray *)responseObject;
@@ -45,7 +44,6 @@
     }];
     [httpFactory downloadDatas:nil];
     [SVProgressHUD show];
-    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
 }
 
 - (void)didReceiveMemoryWarning {

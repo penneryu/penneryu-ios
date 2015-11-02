@@ -54,6 +54,7 @@
             id response = [self AnalysisData:responseObject];
             httpSucessHandler(response);
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
             NSLog(@"HttpFactory %@", error);
             httpFailHandler();
         }];
