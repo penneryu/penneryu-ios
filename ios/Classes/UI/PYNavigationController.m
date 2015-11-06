@@ -6,13 +6,13 @@
 //  Copyright © 2015年 penneryu. All rights reserved.
 //
 
-#import "PYNaviationController.h"
+#import "PYNavigationController.h"
 
-@interface PYNaviationController ()
+@interface PYNavigationController ()
 
 @end
 
-@implementation PYNaviationController
+@implementation PYNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

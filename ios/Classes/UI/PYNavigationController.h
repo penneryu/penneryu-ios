@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PYNaviationController : UINavigationController
+@interface PYNavigationController : UINavigationController
 
 @end

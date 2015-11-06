@@ -8,7 +8,9 @@
 
 #import "ProfileViewController.h"
 
-@interface ProfileViewController ()
+@interface ProfileViewController () {
+    UIActivityIndicatorView *indicator;
+}
 
 @end
 
@@ -16,12 +18,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self showIndicator];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)showIndicator {
+    indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:
+                                          UIActivityIndicatorViewStyleWhite];
+    indicator.center = CGPointMake(self.view.bounds.size.width / 2, indicator.frame.size.height);
+    [indicator setColor:[UIColor grayColor]];
+    [indicator setHidesWhenStopped:YES];
+    [self.view addSubview:indicator];
+    
+    [indicator startAnimating];
 }
 
 /*

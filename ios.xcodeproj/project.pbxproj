@@ -25,7 +25,7 @@
 		D58661CF1BE1FF5D00050A3E /* RongLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661CE1BE1FF5D00050A3E /* RongLoginViewController.m */; };
 		D58661D21BE2017300050A3E /* RongChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D58661D11BE2017300050A3E /* RongChatListViewController.m */; };
 		D586CF3C1BC90F0700CCC96B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */; };
-		D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF4A1BC9202600CCC96B /* PYNaviationController.m */; };
+		D586CF4B1BC9202600CCC96B /* PYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D586CF4A1BC9202600CCC96B /* PYNavigationController.m */; };
 		F9BB7D711BC816F800DF93D5 /* iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D701BC816F800DF93D5 /* iosTests.m */; };
 		F9BB7D7C1BC816F800DF93D5 /* iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D7B1BC816F800DF93D5 /* iosUITests.m */; };
 		F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BB7D8F1BC8192500DF93D5 /* AppDelegate.m */; };
@@ -88,8 +88,8 @@
 		D58661D01BE2017300050A3E /* RongChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RongChatListViewController.h; path = Main/RongCloud/RongChatListViewController.h; sourceTree = "<group>"; };
 		D58661D11BE2017300050A3E /* RongChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RongChatListViewController.m; path = Main/RongCloud/RongChatListViewController.m; sourceTree = "<group>"; };
 		D586CF3B1BC90F0700CCC96B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ios/Resources/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
-		D586CF491BC9202600CCC96B /* PYNaviationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNaviationController.h; sourceTree = "<group>"; };
-		D586CF4A1BC9202600CCC96B /* PYNaviationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNaviationController.m; sourceTree = "<group>"; };
+		D586CF491BC9202600CCC96B /* PYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYNavigationController.h; sourceTree = "<group>"; };
+		D586CF4A1BC9202600CCC96B /* PYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYNavigationController.m; sourceTree = "<group>"; };
 		D586CF4C1BC921B200CCC96B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F9BB7D501BC816F800DF93D5 /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB7D6C1BC816F800DF93D5 /* iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -340,8 +340,8 @@
 				D50CF4B21BCB83010011CEB7 /* Profile */,
 				F9BB7D9F1BC819D500DF93D5 /* LaunchScreen.storyboard */,
 				F9BB7DA01BC819D500DF93D5 /* Main.storyboard */,
-				D586CF491BC9202600CCC96B /* PYNaviationController.h */,
-				D586CF4A1BC9202600CCC96B /* PYNaviationController.m */,
+				D586CF491BC9202600CCC96B /* PYNavigationController.h */,
+				D586CF4A1BC9202600CCC96B /* PYNavigationController.m */,
 				D50CF4A61BCB64140011CEB7 /* PYTabBarController.h */,
 				D50CF4A71BCB64140011CEB7 /* PYTabBarController.m */,
 				D5107BBE1BE7466E00A34BB2 /* PYWelcomeViewController.h */,
@@ -553,7 +553,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D586CF4B1BC9202600CCC96B /* PYNaviationController.m in Sources */,
+				D586CF4B1BC9202600CCC96B /* PYNavigationController.m in Sources */,
 				D50CF4A81BCB64140011CEB7 /* PYTabBarController.m in Sources */,
 				D58661CF1BE1FF5D00050A3E /* RongLoginViewController.m in Sources */,
 				F9BB7D951BC8192500DF93D5 /* main.m in Sources */,

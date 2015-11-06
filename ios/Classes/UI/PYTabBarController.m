@@ -7,7 +7,7 @@
 //
 
 #import "PYTabBarController.h"
-#import "PYNaviationController.h"
+#import "PYNavigationController.h"
 #import "MainViewController.h"
 #import "MessageViewController.h"
 #import "DiscoverViewController.h"
@@ -49,7 +49,7 @@
         controller.tabBarItem.selectedImage = [UIImage imageNamed:selectImageName];
     }
     
-    PYNaviationController *navationController = [[PYNaviationController alloc]initWithRootViewController:controller];
+    PYNavigationController *navationController = [[PYNavigationController alloc]initWithRootViewController:controller];
     [self addChildViewController:navationController];
 }
 
