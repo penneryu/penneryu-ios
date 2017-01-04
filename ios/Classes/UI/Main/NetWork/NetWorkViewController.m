@@ -10,6 +10,7 @@
 #import "ChannelHttpFactory.h"
 #import "ChannelInfo.h"
 #import "SVProgressHUD.h"
+#import "AsyncImageView.h"
 
 @interface NetWorkViewController () {
     ChannelHttpFactory *httpFactory;
@@ -26,6 +27,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.resultLabel];
+    
+    AsyncImageView * imageView = [[AsyncImageView alloc]initWithFrame:CGRectMake(0, 80, 300, 200)];
+    [imageView setImageURL:@"http://img.vision.pptv.com/images/1c/f8/1cf8b6806829e5ffcd958f2da5f436ba7e936e55.jpeg"];
+    [self.view addSubview:imageView];
     
     httpFactory = [[ChannelHttpFactory alloc]init];
     __weak NetWorkViewController *weakSelf = self;
