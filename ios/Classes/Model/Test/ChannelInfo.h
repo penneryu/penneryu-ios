@@ -10,7 +10,7 @@
 
 @interface ChannelInfo : NSObject
 
-@property(nonatomic, assign)int cid;
-@property(nonatomic, strong)NSString *name;
+@property (nonatomic, assign) int cid;
+@property (nonatomic, copy) NSString *name;
 
 @end

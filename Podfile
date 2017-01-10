@@ -7,5 +7,6 @@ pod "SDWebImage"
 pod 'Parse'
 pod 'SVProgressHUD'
 pod 'RongCloudIMKit'
+pod 'MJExtension'
 
 end

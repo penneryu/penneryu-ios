@@ -10,23 +10,23 @@
 
 @protocol HttpEventHanler <NSObject>
 
-- (void)httpSucessHandler:(id)result;
+- (void)httpSucessHandler:(NSObject *)result;
 - (void)httpFailHandler;
 
 @end
 
 @interface HttpFactoryBase : NSObject {
-    
+
     NSMutableArray *params;
-    void (^httpSucessHandler)(id);
+    void (^httpSucessHandler)(NSObject *);
     void (^httpFailHandler)(void);
 }
 
 - (NSString *)createBaseUrl;
 - (NSMutableDictionary *)createUrlParams:(NSMutableArray *)params;
-- (void)setTest:(id<HttpEventHanler>)handler;
 - (void)downloadDatas:(NSString *)args, ...;
 - (void)setHttpHandler:(void (^)(id))sucessHandler faliure:(void (^)(void)) failHandler;
-- (id)AnalysisData:(id)responseObject;
+- (NSString *)getModelClass;
+- (void)processModelClass;
 
 @end

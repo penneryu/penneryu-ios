@@ -11,6 +11,7 @@
 #import "ChannelInfo.h"
 #import "SVProgressHUD.h"
 #import "AsyncImageView.h"
+#import "ListDataModel.h"
 
 @interface NetWorkViewController () {
     ChannelHttpFactory *httpFactory;
@@ -34,11 +35,11 @@
     
     httpFactory = [[ChannelHttpFactory alloc]init];
     __weak NetWorkViewController *weakSelf = self;
-    [httpFactory setHttpHandler:^(id responseObject) {
+    [httpFactory setHttpHandler:^(ListDataModel *responseObject) {
         [SVProgressHUD dismiss];
         NetWorkViewController *strongSelf = weakSelf;
         if (strongSelf != nil) {
-             NSArray *array = (NSArray *)responseObject;
+             NSArray *array = (NSArray *)responseObject.data;
             for (ChannelInfo *channelInfo in array) {
                 strongSelf.resultLabel.text = [NSString stringWithFormat:@"%@ %@", strongSelf.resultLabel.text == nil ? @"" : strongSelf.resultLabel.text , channelInfo.name];
             }

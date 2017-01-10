@@ -8,17 +8,11 @@
 
 #import "HttpFactoryBase.h"
 #import "AFNetworking.h"
+#import "MJExtension.h"
+#import <objc/runtime.h>
 
-@interface HttpFactoryBase() {
-    
-}
-
-@end
 
 @implementation HttpFactoryBase
-
-- (void)setTest:(id<HttpEventHanler>)handler {
-}
 
 - (void)setHttpHandler:(void (^)(id responseObject))sucessHandler faliure:(void (^)(void)) failHandler {
     httpSucessHandler = sucessHandler;
@@ -47,18 +41,8 @@
     }
     NSString *baseUrl = [self createBaseUrl];
     NSMutableDictionary *dicParams = [self createUrlParams:params];
+    
     if (baseUrl) {
-        
-//        AFHTTPRequestOperationManager *httpManager = [AFHTTPRequestOperationManager manager];
-//        httpManager.responseSerializer = [AFXMLParserResponseSerializer serializer];
-//        [httpManager GET:baseUrl parameters:dicParams success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//            id response = [self AnalysisData:responseObject];
-//            httpSucessHandler(response);
-//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//            NSLog(@"HttpFactory %@", error);
-//            httpFailHandler();
-//        }];
-        
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
         NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:baseUrl parameters:dicParams error:nil];
@@ -67,7 +51,8 @@
                 NSLog(@"HttpFactory %@", error);
                 httpFailHandler();
             } else {
-                id response = [self AnalysisData:responseObject];
+                [self processModelClass];
+                id response = [NSClassFromString([self getModelClass]) mj_objectWithKeyValues:responseObject];
                 httpSucessHandler(response);
             }
         }];
@@ -75,8 +60,11 @@
     }
 }
 
-- (id)AnalysisData:(id)responseObject {
-    return nil;
+- (NSString *)getModelClass {
+    return @"ListDataModel";
+}
+
+- (void)processModelClass {
 }
 
 @end

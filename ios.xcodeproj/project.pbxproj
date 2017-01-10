@@ -35,6 +35,7 @@
 		F9BB7DA11BC819D500DF93D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7D9F1BC819D500DF93D5 /* LaunchScreen.storyboard */; };
 		F9BB7DA21BC819D500DF93D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7DA01BC819D500DF93D5 /* Main.storyboard */; };
 		F9E7F9BD1E1D0B2200BD7625 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7F9BC1E1D0B2200BD7625 /* AsyncImageView.m */; };
+		F9E7F9C01E238A2D00BD7625 /* ListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7F9BF1E238A2D00BD7625 /* ListDataModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		F9BB7DA01BC819D500DF93D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F9E7F9BB1E1D0B2200BD7625 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncImageView.h; path = View/AsyncImageView.h; sourceTree = "<group>"; };
 		F9E7F9BC1E1D0B2200BD7625 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = View/AsyncImageView.m; sourceTree = "<group>"; };
+		F9E7F9BE1E238A2D00BD7625 /* ListDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListDataModel.h; path = Model/ListDataModel.h; sourceTree = "<group>"; };
+		F9E7F9BF1E238A2D00BD7625 /* ListDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDataModel.m; path = Model/ListDataModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 				D58661C11BE0BA2A00050A3E /* Test */,
 				D58661C01BE0B97C00050A3E /* HttpFactoryBase.h */,
 				D58661BE1BE0B92A00050A3E /* HttpFactoryBase.m */,
+				F9E7F9BE1E238A2D00BD7625 /* ListDataModel.h */,
+				F9E7F9BF1E238A2D00BD7625 /* ListDataModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -583,6 +588,7 @@
 				D58661C71BE0BABF00050A3E /* ChannelInfo.m in Sources */,
 				D5107BC01BE7466E00A34BB2 /* PYWelcomeViewController.m in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
+				F9E7F9C01E238A2D00BD7625 /* ListDataModel.m in Sources */,
 				D58661CB1BE0BB3D00050A3E /* NetWorkViewController.m in Sources */,
 				D58661BF1BE0B92A00050A3E /* HttpFactoryBase.m in Sources */,
 			);

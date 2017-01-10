@@ -7,7 +7,8 @@
 //
 
 #import "ChannelHttpFactory.h"
-#import "ChannelInfo.h"
+#import "ListDataModel.h"
+#import "MJExtension.h"
 
 @implementation ChannelHttpFactory
 
@@ -15,17 +16,12 @@
     return @"http://9.fanli.com/app/v2/channel";;
 }
 
-- (id)AnalysisData:(id)responseObject {
-    NSDictionary *dictionary = (NSDictionary *)responseObject;
-    NSArray *datas = (NSArray *)dictionary[@"data"];
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:[datas count]];
-    for (NSDictionary *value in datas) {
-        ChannelInfo *info = [[ChannelInfo alloc]init];
-        info.cid =  [(NSString *)value[@"id"] intValue];
-        info.name = (NSString *)value[@"name"];
-        [array addObject:info];
-    }
-    return array;
+- (void)processModelClass {
+    [ListDataModel mj_setupObjectClassInArray:^NSDictionary *{
+        return @{
+            @"data" : @"ChannelInfo"
+        };
+    }];
 }
 
 @end
