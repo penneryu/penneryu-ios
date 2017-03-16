@@ -23,11 +23,23 @@
     [super viewDidLoad];
     
     self.title = @"Parse";
+    self.navigationItem.leftItemsSupplementBackButton = YES;
+    UIBarButtonItem *closeItem = [[UIBarButtonItem alloc]initWithTitle:@"关闭"
+                                    style:UIBarButtonItemStyleDone target:self action:@selector(closeClick)];
+    self.navigationItem.leftBarButtonItems = @[closeItem];
+    
+//    self.navigationController.toolbarHidden = NO;
+//    self.toolbarItems = @[closeItem];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
+
+- (void)closeClick{
+    
+}
+
 
 - (IBAction)singinBtnDidPress:(id)sender {
     NSString *userName = self.userNameTextField.text;

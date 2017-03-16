@@ -45,6 +45,14 @@
     if (baseUrl) {
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+        
+//        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy defaultPolicy];
+//        securityPolicy.allowInvalidCertificates = YES;
+//        securityPolicy.validatesDomainName = NO;
+        AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
+        securityPolicy.pinnedCertificates = [[NSSet alloc]initWithObjects:@"", nil];
+        [manager setSecurityPolicy:securityPolicy];
+        
         NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer]requestWithMethod:@"GET" URLString:baseUrl parameters:dicParams error:nil];
         NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
             if (error) {

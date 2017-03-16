@@ -13,7 +13,8 @@
 @implementation ChannelHttpFactory
 
 - (NSString *)createBaseUrl {
-    return @"http://9.fanli.com/app/v2/channel";;
+//    return @"http://9.fanli.com/app/v2/channel";
+    return @"https://192.168.30.3:32770/channel.json";
 }
 
 - (void)processModelClass {

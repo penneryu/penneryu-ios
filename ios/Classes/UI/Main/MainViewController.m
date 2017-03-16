@@ -11,6 +11,7 @@
 #import "StackViewController.h"
 #import "NetWorkViewController.h"
 #import "RongLoginViewController.h"
+#import "WKWebViewController.h"
 
 @interface MainViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -37,7 +38,7 @@
 - (NSArray *)items {
     if (_items) return _items;
     
-    _items = @[@"Parse", @"StackView", @"NetWork", @"RongCloud", @""];
+    _items = @[@"Parse", @"StackView", @"NetWork", @"RongCloud", @"WKWebView", @""];
     
     return _items;
 }
@@ -80,6 +81,8 @@
         vc = [[NetWorkViewController alloc]init];
     } else if (indexPath.row == 3) {
         vc = [[RongLoginViewController alloc]init];
+    } else if (indexPath.row == 4) {
+        vc = [[WKWebViewController alloc]init];
     }
     [self.navigationController pushViewController:vc animated:YES];
 }

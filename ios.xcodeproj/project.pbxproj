@@ -36,6 +36,8 @@
 		F9BB7DA21BC819D500DF93D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9BB7DA01BC819D500DF93D5 /* Main.storyboard */; };
 		F9E7F9BD1E1D0B2200BD7625 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7F9BC1E1D0B2200BD7625 /* AsyncImageView.m */; };
 		F9E7F9C01E238A2D00BD7625 /* ListDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7F9BF1E238A2D00BD7625 /* ListDataModel.m */; };
+		F9F704A21E7A3C08005B917B /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F704A11E7A3C08005B917B /* WKWebViewController.m */; };
+		F9F704A41E7A3EB6005B917B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F704A31E7A3EB6005B917B /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +114,9 @@
 		F9E7F9BC1E1D0B2200BD7625 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncImageView.m; path = View/AsyncImageView.m; sourceTree = "<group>"; };
 		F9E7F9BE1E238A2D00BD7625 /* ListDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListDataModel.h; path = Model/ListDataModel.h; sourceTree = "<group>"; };
 		F9E7F9BF1E238A2D00BD7625 /* ListDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDataModel.m; path = Model/ListDataModel.m; sourceTree = "<group>"; };
+		F9F704A01E7A3C08005B917B /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKWebViewController.h; path = Main/WKWebView/WKWebViewController.h; sourceTree = "<group>"; };
+		F9F704A11E7A3C08005B917B /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKWebViewController.m; path = Main/WKWebView/WKWebViewController.m; sourceTree = "<group>"; };
+		F9F704A31E7A3EB6005B917B /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F704A41E7A3EB6005B917B /* WebKit.framework in Frameworks */,
 				1BDCD14F64FD005965B1A2A2 /* libPods-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +149,7 @@
 		159EB1219F57D29A6B10C52F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9F704A31E7A3EB6005B917B /* WebKit.framework */,
 				DD4AE2BFF88FE42389DC1799 /* libPods-ios.a */,
 			);
 			name = Frameworks;
@@ -166,6 +173,7 @@
 				D586CF451BC91B0300CCC96B /* Parse */,
 				D58661CC1BE1FF0D00050A3E /* RongCloud */,
 				D58661B71BE0A6ED00050A3E /* StackView */,
+				F9F7049C1E7A3B3B005B917B /* WKWebView */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -387,6 +395,15 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		F9F7049C1E7A3B3B005B917B /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				F9F704A01E7A3C08005B917B /* WKWebViewController.h */,
+				F9F704A11E7A3C08005B917B /* WKWebViewController.m */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -457,6 +474,7 @@
 				TargetAttributes = {
 					F9BB7D4F1BC816F800DF93D5 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = XRQ3MA22VC;
 					};
 					F9BB7D6B1BC816F800DF93D5 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -588,6 +606,7 @@
 				D58661C71BE0BABF00050A3E /* ChannelInfo.m in Sources */,
 				D5107BC01BE7466E00A34BB2 /* PYWelcomeViewController.m in Sources */,
 				F9BB7D941BC8192500DF93D5 /* AppDelegate.m in Sources */,
+				F9F704A21E7A3C08005B917B /* WKWebViewController.m in Sources */,
 				F9E7F9C01E238A2D00BD7625 /* ListDataModel.m in Sources */,
 				D58661CB1BE0BB3D00050A3E /* NetWorkViewController.m in Sources */,
 				D58661BF1BE0B92A00050A3E /* HttpFactoryBase.m in Sources */,
@@ -717,6 +736,7 @@
 			baseConfigurationReference = 6B6EFC3A29B1C3B0F857CA41 /* Pods-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XRQ3MA22VC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphonesimulator",
@@ -736,6 +756,7 @@
 			baseConfigurationReference = 47F7B71FBDC2B09DC1369B63 /* Pods-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XRQ3MA22VC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ios/Externals/BaiduMap/Release-iphonesimulator",
